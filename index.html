@@ -1,0 +1,8 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>汪汪摩托冒险</title><link rel="stylesheet" href="style.css"></head><body>
+<canvas id="scene" aria-label="森林摩托三维游戏"></canvas>
+<header><div class="brand">汪汪摩托冒险 <small>森林穿越</small></div><button id="changeRider">换角色</button><button id="pause" aria-label="暂停游戏">暂停</button><button id="sound">声音：关</button></header>
+<div class="hud"><div><small>骨头积分</small><strong id="score">0</strong></div><div><small>剩余生命</small><strong id="hearts">3 / 3</strong></div><div><small>时速</small><strong><span id="speed">0</span><em> km/h</em></strong></div></div>
+<div class="rider-status"><span id="riderName">小狗阿汪</span><b id="curve">前方平缓</b></div><div class="journey"><span>森林入口</span><div><i id="progress"></i></div><span>山顶营地 · <b id="distance">1500</b> m</span></div>
+<section id="overlay"><div class="card"><span class="eyebrow">一趟属于小狗的森林冒险</span><h1 id="title">戴好头盔，<br>出发去兜风。</h1><p id="description">选一位森林车手，收集骨头，跳过路障。<br>穿越 1500 米弯道公路，抵达山顶营地。</p><fieldset class="character-picker"><legend>选择你的车手</legend><div id="characters"></div></fieldset><div class="instructions"><span>← → / A D <b>换道</b></span><span>空格 <b>跳跃</b></span><span>P <b>暂停</b></span></div><button id="start">开始冒险</button><p class="record">最高积分 <b id="best">0</b> · 触屏也能玩</p></div></section>
+<div id="toast" role="status"></div><footer><span>收集骨头 · 路障可以跳过 · 木坡自动起跳</span><div class="touch"><button data-action="left" aria-label="向左">←</button><button data-action="jump">跳跃</button><button data-action="right" aria-label="向右">→</button></div></footer>
+<script type="module" src="game.mjs"></script></body></html>
